@@ -1,13 +1,13 @@
 import "./App.css";
+import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
+    <div className="bg-gray-50 min-h-screen">
       <Navbar />
-      
-      <h1>Hello World</h1>
-    </>
+      <HeroSection />
+    </div>
   );
 }
 
