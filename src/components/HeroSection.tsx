@@ -2,7 +2,7 @@ import TestimonialSection from "./TestimonialSection";
 
 const HeroSection = () => {
   return (
-    <section className="text-center px-2 lg:px-4 mt-12 md:mt-28">
+    <section className="text-center mt-8 md:mt-28">
       <h3 className="text-sm">❤️ Trusted and Loved by New Yorkers. ❤️</h3>
       <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold text-center text-gray-800 max-w-7xl mx-auto mb-4">
         <span className="text-green-600">Discover</span>,{" "}
