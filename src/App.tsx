@@ -6,7 +6,7 @@ import WhyUsSection from "./components/WhyUsSection";
 
 function App() {
   return (
-    <div className="bg-gray-50 min-h-screen px-4 scroll-smooth">
+    <div className="bg-gray-50 min-h-screen px-4 scroll-smooth pb-12">
       <Navbar />
       <HeroSection />
       <WhyUsSection />
