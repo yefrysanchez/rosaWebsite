@@ -7,7 +7,7 @@ type TestimonialCardProps = {
 
 const TestimonialCard = ({ testimonial, name }: TestimonialCardProps) => {
   return (
-    <div className="flex flex-col items-center justify-between bg-white rounded-lg p-6 max-w-xs mx-auto shrink-0">
+    <div className="flex flex-col items-center justify-between rounded-xl bg-white p-6 max-w-xs mx-auto shrink-0">
       <div className="h-20 w-20 rounded-full bg-gray-300 mb-4"></div>
         <h3 className="text-lg font-semibold mb-2">{name}</h3>
       <BiSolidQuoteAltLeft />

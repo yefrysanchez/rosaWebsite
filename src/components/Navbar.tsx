@@ -1,14 +1,11 @@
 const Navbar = () => {
   return (
     <header className="py-4 mx-auto max-w-7xl sticky top-0 z-50 bg-gray-50">
-      <nav className="flex justify-between items-center">
-        <div>
-          <h1 className="font-bold text-3xl tracking-tighter "> 
-            <span className="text-green-600">Day</span>
-            <span className="text-fuchsia-400">Care</span>
-          </h1>
+      <nav className="h-20 flex justify-between items-center">
+        <div className="h-full">
+          <img className="h-full w-full object-cover" src="/logo.webp" alt="logo" />
         </div>
-        <a href="#" className="inline-block text-white font-bold bg-black px-8 py-3 rounded-full hover:bg-fuchsia-400 transition-colors duration-300">Contact Us</a>
+        <a href="#" className="inline-block text-white font-bold bg-black px-8 py-3 rounded-full hover:bg-[#F87F9E] transition-colors duration-300">Contact Us</a>
       </nav>
     </header>
   );

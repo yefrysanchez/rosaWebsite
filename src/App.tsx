@@ -1,4 +1,5 @@
 import "./App.css";
+import Contact from "./components/Contact";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import WhyUsSection from "./components/WhyUsSection";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <WhyUsSection />
+      <Contact />
     </div>
   );
 }
