@@ -14,7 +14,7 @@ const HeroSection = () => {
         A Safe & Fun Learning Space for Your Child!
       </h3>
       <a
-        href="#"
+        href="#contact"
         className="inline-block text-white font-bold hover:bg-black px-8 py-3 rounded-full bg-[#F87F9E] transition-colors duration-300"
       >
         Enroll Now

@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="h-full">
           <img className="h-full w-full object-cover" src="/logo.webp" alt="logo" />
         </div>
-        <a href="#" className="inline-block text-white font-bold bg-black px-8 py-3 rounded-full hover:bg-[#F87F9E] transition-colors duration-300">Contact Us</a>
+        <a href="#contact" className="inline-block text-white font-bold bg-black px-8 py-3 rounded-full hover:bg-[#F87F9E] transition-colors duration-300">Contact Us</a>
       </nav>
     </header>
   );
