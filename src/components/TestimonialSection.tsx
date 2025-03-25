@@ -4,6 +4,7 @@ import useMeasure from "react-use-measure";
 import { motion, useMotionValue } from "motion/react";
 import { useEffect,  } from "react";
 import { animate } from "motion";
+import { parentVariants } from "../animations/animantions";
 
 const TestimonialSection = () => {
   const [ref, { width }] = useMeasure();
@@ -15,7 +16,7 @@ const TestimonialSection = () => {
   useEffect(() => {
     const controls = animate(xTranslation, [0, finalPosition], {
       ease: "linear",
-      duration:  25,
+      duration:  40,
       repeat: Infinity,
       repeatType: "loop",
       repeatDelay: 0,
@@ -40,10 +41,12 @@ const TestimonialSection = () => {
       {/* Right Gradient Overlay */}
       <div className="absolute z-10 top-0 right-0 h-full w-20 bg-gradient-to-r from-transparent to-gray-50"></div>
 
-      <motion.div ref={ref} style={{ x: xTranslation }} className="flex w-fit gap-6 mt-12">
+      <motion.div variants={parentVariants}
+      initial="hidden"
+      animate="visible"ref={ref} style={{ x: xTranslation }} className="flex w-fit gap-6 mt-12">
         {/* Testimonials with a sufficient number of duplicates for smooth scrolling */}
         {[...testimonials, ...testimonials].map((t, i) => (
-          <TestimonialCard key={i} testimonial={t.review} name={t.name} />
+          <TestimonialCard key={i} testimonial={t.review} name={t.name} img={t.photo} />
         ))}
       </motion.div>
     </div>
